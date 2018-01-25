@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<meta charset="UTF-8">
+<title>Penguins!!!</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	
+	<div class="container">
+
+<header>
+	<h1>Penguins Are Cool !!!</h1>
+	<a href="https://en.wikipedia.org/wiki/Penguin" target="_blank">
+		<img src="images/penguin-link.png" alt="Penguin Wikipedia">
+	</a>
+</header>
+  
+<nav>
+	<p>Who doesn't love dancing penguins?!?</p>
+	<iframe width="419" height="280" src="https://www.youtube.com/embed/XNvo_3eXGag" allowfullscreen></iframe>	
+</nav>
+
+<article>
+	<p>The 6 species of Antarctic penguins.</p>
+	<h2>
+	<img id="imagetoswap" src="images/adelie.png" alt=""/>
+
+<br/><br/>
+
+<select id="dlist" onchange="swapimage()">
+<option value="images/adelie.png">Adelie</option>	
+<option value="images/chinstrap.png">Chinstrap</option>	
+<option value="images/emperor.png">Emperor</option>
+<option value="images/gentoo.png">Gentoo</option>
+<option value="images/king.png">King</option>
+<option value="images/macaroni.png">Macaroni</option>	
+<option value="images/the-penguin.png">The Penguin</option>
+	
+</select>
+
+<script>
+function swapimage(){
+	var image = document.getelementbyid("imagetoswap");
+	var dropd = document.getelementbyid("dlist");
+	image.src = dropd.value;	
+}
+</script>
+	</h2>
+</article>
+		
+<footer></footer>
+
+</div>
+</body>
+</html>
+
+
